@@ -1,0 +1,17 @@
+{
+	"required": true,
+	"package": "net.crzybananaman.slotsteal.mixin",
+	"compatibilityLevel": "JAVA_21",
+	"mixins": [
+		"PlayerInventoryMixin",
+		"ItemStackMixin",
+		"ServerPlayerEntityMixin",
+		"ServerPlayNetworkHandlerMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}

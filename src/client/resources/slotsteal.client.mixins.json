@@ -1,0 +1,13 @@
+{
+	"required": true,
+	"package": "net.crzybananaman.slotsteal.mixin.client",
+	"compatibilityLevel": "JAVA_21",
+	"client": [
+		"ClientPlayerInteractionManagerMixin",
+		"HandledScreenMixin",
+		"ClientPlayerEntityMixin"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}

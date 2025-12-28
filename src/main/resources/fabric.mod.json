@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "slotsteal",
+	"version": "${version}",
+	"name": "Slot Steal",
+	"description": "A lifesteal-style mod using inventory slots instead of hearts. Kill players to gain slots, lose slots when dying!",
+	"authors": [
+		"CrzyBananaMan"
+	],
+	"contact": {
+		"homepage": "",
+		"sources": "https://github.com/crzybananaman/slotsteal"
+	},
+	"license": "MIT",
+	"icon": "assets/slotsteal/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.crzybananaman.slotsteal.SlotSteal"
+		],
+		"client": [
+			"net.crzybananaman.slotsteal.SlotStealClient"
+		],
+		"fabric-datagen": [
+			"net.crzybananaman.slotsteal.SlotStealDataGenerator"
+		]
+	},
+	"mixins": [
+		"slotsteal.mixins.json",
+		{
+			"config": "slotsteal.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.18.4",
+		"minecraft": "~1.21.11",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
